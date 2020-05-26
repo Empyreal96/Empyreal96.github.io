@@ -1,8 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Windows10A64</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+<!DOCTYPE html>
+<html><head>
+
+
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width initial-scale=1"><title>Windows10A64</title>
+<link href="https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"><style type="text/css">html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
@@ -501,9 +503,17 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
-</style>
-</head>
-<body class='typora-export os-windows' >
-<div  id='write'  class = 'is-node'><h1><a name="windows-10-arm64-optimized	-	home" class="md-header-anchor"></a><strong><span>Windows 10 ARM64 Optimized</span></strong><span>	</span><span>-</span><span>	</span><span>Home</span></h1><p>&nbsp;</p><p><span>XDA Post:</span></p><p>&nbsp;</p><h3><a name="what-is-it-and-why-go-to-this-effort" class="md-header-anchor"></a><span>What is it and why go to this effort?</span></h3><p><span>If you have reached this page, then I will presume you have heard of the Windows On Arm Project (WoA Project </span><em><span>Insert link</span></em><span>) and their incredible work in providing the tools and drivers to allow us Lumia 950/XL owners to have a full Windows 10 experience on the device.. but because, for many reasons, it can be slow at times, the situation is worse with the standard 950 compared to the XL due to Windows 10 not initializing the &#39;big&#39; CPU of the 950..</span></p><p><span>This is where I am attempting to create an Optimized and Speedy image to deploy with WoA Deployer on either the 950, XL or Pi3 (Or any ARM64 device as long as you have drivers for the hardware you are deploying to) which aims to keep Average User features like Microsoft Store, Metro Apps and Most of the Default experience the same, just a bit lighter &#39;Under the Hood&#39;</span></p><h6><a name="tools-used-to-create-image" class="md-header-anchor"></a><span>Tools used to create Image:</span></h6><ul><li><span>DISM++ (</span><em><span>link</span></em><span>)</span></li><li><span>WinReducer X 100 (Free Version)</span></li><li><span>RegEdit</span></li><li><span>Notepad++</span></li></ul><h4><a name="what-is-different" class="md-header-anchor"></a><span>What Is different?</span></h4><ul><li><span>Unneeded Windows Services Disabled, Some Removed</span></li><li><span>Removed Built-In Metro UI Apps (Considered Bloat)</span></li><li><span>Disabled Telemetry Tasks and Blocked Telemetry IP Addresses (</span><em><span>Credit and link</span></em><span>)</span></li><li><span>Removed potentially &#39;Bad&#39; Updates</span></li><li><span>Variety of tweaks aimed at performance</span></li></ul><h6><a name="a-full-changelog-can-be-found-here" class="md-header-anchor"></a><span>A FULL Changelog can be found Here</span></h6><h4><a name="requirements" class="md-header-anchor"></a><span>Requirements:</span></h4><ul><li><span>WoA Deployer (</span><em><span>Link</span></em><span>)</span></li><li><span>Windows Device Recovery Tool</span></li><li><span>Prior Knowledge of using WoA Project</span></li></ul><p>&nbsp;</p><h4><a name="screens" class="md-header-anchor"></a><span>Screens: </span></h4></div>
-</body>
-</html>
+</style></head><body style="color: white; background-color: rgb(153, 153, 153);" class="typora-export os-windows" alink="#000099" link="#cc33cc" vlink="#990099">
+<div id="write" class="is-node"><h1><a name="windows-10-arm64-optimized	-	home" class="md-header-anchor"></a><strong><span>Windows 10 ARM64 Optimized</span></strong><span>	</span><span>-</span><span>	</span><a style="color: rgb(204, 51, 204);" href="index.html"><span>Home</span></a></h1><p>&nbsp;</p><p><span>XDA Post:</span></p><p>&nbsp;</p><h3><a name="what-is-it-and-why-go-to-this-effort" class="md-header-anchor"></a><span>What is it and why go to this effort?</span></h3><p><span>If you have reached this page, then I will presume you have heard of the Windows On Arm Project (WoA Project </span><em><span>Insert link</span></em><span>)
+and their incredible work in providing the tools and drivers to allow
+us Lumia 950/XL owners to have a full Windows 10 experience on the
+device.. but because, for many reasons, it can be slow at times, the
+situation is worse with the standard 950 compared to the XL due to
+Windows 10 not initializing the 'big' CPU of the 950..</span></p><p><span>This
+is where I am attempting to create an Optimized and Speedy image to
+deploy with WoA Deployer on either the 950, XL or Pi3 (Or any ARM64
+device as long as you have drivers for the hardware you are deploying
+to) which aims to keep Average User features like Microsoft Store,
+Metro Apps and Most of the Default experience the same, just a bit
+lighter 'Under the Hood'</span></p><h6><a name="tools-used-to-create-image" class="md-header-anchor"></a><span>Tools used to create Image:</span></h6><ul><li><span>DISM++ (</span><em><span>link</span></em><span>)</span></li><li><span>WinReducer X 100 (Free Version)</span></li><li><span>RegEdit</span></li><li><span>Notepad++</span></li></ul><h4><a name="what-is-different" class="md-header-anchor"></a><span>What Is different?</span></h4><ul><li><span>Unneeded Windows Services Disabled, Some Removed</span></li><li><span>Removed Built-In Metro UI Apps (Considered Bloat)</span></li><li><span>Disabled Telemetry Tasks and Blocked Telemetry IP Addresses (</span><em><span>Credit and link</span></em><span>)</span></li><li><span>Removed potentially 'Bad' Updates</span></li><li><span>Variety of tweaks aimed at performance</span></li></ul><h6><a name="a-full-changelog-can-be-found-here" class="md-header-anchor"></a><span>A FULL Changelog can be found Here</span></h6><h4><a name="requirements" class="md-header-anchor"></a><span>Requirements:</span></h4><ul><li><span>WoA Deployer (</span><em><span>Link</span></em><span>)</span></li><li><span>Windows Device Recovery Tool</span></li><li><span>Prior Knowledge of using WoA Project</span></li></ul><p>&nbsp;</p><h4><a name="screens" class="md-header-anchor"></a><span>Screens: </span></h4></div>
+</body></html>
