@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="assets/images/LinuxOn950XL-meta.jpeg">
+  <meta property="og:image" content="assets/images/LinuxOn950XL-meta.jpeg">
+  <meta name="twitter:title" content="Debian Stretch on Lumia 950XL">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/mbr-122x141.png" type="image/x-icon">
+  <meta name="description" content="Basic Guide on how to install Linux on Lumia 950XL">
+  
+  
+  <title>Debian Stretch on Lumia 950XL</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="menu cid-s1fJKuXpdw" once="menu" id="menu1-1f">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://github.com/Empyreal96">
+                         <img src="assets/images/mbr-122x141.png" alt="Empyreal96@Github" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html">
+                        empyreal96</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="https://mobirise.co">
+                        </a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="Win10ARM64.html" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-cursor-click mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
+                        Guides and Extras</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="LinuxOn950XL.html"><span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>Installing Linux on Lumia 950XL</a></div></li><li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="Win10Tool.html"><span class="mbri-code mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
+                        Windows 10 Toolbox</a>
+                </li><li class="nav-item"><a class="nav-link link text-white display-4" href="Win10GUI.html"><span class="mbri-drag-n-drop2 mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
+                        Toolbox C# GUI</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="Win10ARM64.html"><span class="mbri-windows mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
+                        Windows ARM64 Optimized</a></li></ul>
+            
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/v">html templates</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-figure" style="width: 50%;">
+                <img src="assets/images/ezx5-afwaaeiwmp-498x1020.jpg" alt="Mobirise" title="">
+            </div>
+
+            <div class="media-content">
+                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">Install Debian on 950XL&nbsp;</h1>
+                <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-5">THOSE WHO ARE FIRST TIMERS GO AND CHECK OUT WOA PROJECT FIRST, LEARN ABOUT RISKS (Several partitions need to be left alone or you will damage your device so back up with win32diskimager! You have been warned I'm serious!) 
+</h3>
+                <div class="mbr-section-text mbr-white pb-3 ">
+                    <p class="mbr-text mbr-fonts-style display-5"><br>This will mainly be a text-based guide, I may add screens next time I reinstall Linux but I feel not need right now..
+<br><br>Notes please read: 
+<br>From the start I will presume readers have already Unlocked their Bootloader and Installed WoA Lumia already/before. 
+<br>This isn't really useful yet because nothing can be done really, it's more for fun or developing more on getting Linux supported.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content10 cid-s1fNCLQARi" id="content10-1o">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 66%;">
+            <hr class="line" style="width: 25%;">
+            <div class="section-text align-center mbr-white mbr-fonts-style display-7"><div>This wouldn't be possible if it wasn't for the people behind the original 4.18.6 Kernel and the 950XL's Device Tree<br>(Find links to Kernel source and DT source on the XL's <a href="https://wiki.postmarketos.org/wiki/Microsoft_Lumia_950_XL_(microsoft-cityman)" target="_blank">PostmarketOS Page</a>)</div><div>
+</div><div>I upgraded the kernel to the mainline 5.7 Kernel, and added Bluetooth Networking (bnap module) support to the kernel. To use this there are extra steps.. I recommend using Imbushuo's 4.18.6 Kernel for guarenteed boot up, mine is still testing stage (this is my first proper Kernel compile so there may be issues I haven't found any yet it seems to work just fine, but so far it performs the same just with added BT networking.)
+</div></div>
+            <hr class="line" style="width: 25%;">
+        </div>
+    </div>
+</section>
+
+<section class="counters5 counters cid-s1fMT3iE5y" id="counters5-1m">
+
+    
+
+    
+
+    <div class="container pt-4 mt-2">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Downloads</h2>
+        <h3 class="mbr-section-subtitle pb-5 align-center mbr-fonts-style display-5">
+            Here you can find links to the Kernels and Boot files.</h3>
+        <div class="row justify-content-center">
+            <div class="cards-block">
+                <div class="cards-container">
+                    <div class="card px-3 align-left col-12">
+                        <div class="panel-item p-4 d-flex">
+                            <div class="card-img pr-3">
+                                <h3 class="img-text d-flex align-items-center justify-content-center">#</h3>
+                            </div>
+                            <div class="card-text">
+                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7"><a href="https://1drv.ms/u/s!AgebdKxYVqX9unkJR1g_njNngk4W" target="_blank">Kernel Version 4.18.6 and Boot files</a></h4>
+                                <p class="mbr-content-text mbr-fonts-style display-7">
+                                    This is the original mainline kernel based on 4.18.6 &nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card px-3 align-left col-12">
+                        <div class="panel-item p-4 d-flex">
+                            <div class="card-img pr-3">
+                                <h3 class="img-text d-flex align-items-center justify-content-center">#</h3>
+                            </div>
+                            <div class="card-text">
+                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7"><a href="https://github.com/Empyreal96/packed-lumia-950xl-kernels/tree/master/5.7-mainline" target="_blank">Kernel Version 5.7 and Boot Files</a></h4>
+                                <p class="mbr-content-text mbr-fonts-style display-7">
+                                    This was compiled using the config from 4.18.6, added Bluetooth Networking support (Kernel Modules)&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="header1 cid-s1fRc8pEwq" id="header16-1r">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Requirements:</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content9 cid-s1gqiE0u5m" id="content9-2h">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>⦁ Unlocked Bootloader and Uefi, Bootshim, Developer Menu and BDC Config - It's expected you have already unlocked with WPInternals and used WoA Deployer to get the other requirements.
+<br><br></div><div>⦁ A FULL backup of your device - I'm serious when I say backup.. use Win32DiskImager to create a raw backup of your device.. There is always a chance of something going wrong.
+<br><br></div><div>⦁ Debian installed - I used Debian Stretch, this in theory can be done with WSL or Virtual Machine but I have not tried those methods, it can also be done with Ubuntu to install an Ubuntu flavour</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="header1 cid-s1fTTj0iE1" id="header16-1u">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Step 1 - Prepairing</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content9 cid-s1fUJqrFA5" id="content9-1w">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div><span style="font-size: 1.5rem;">⦁	We need to install the required tools:&nbsp;<br></span><br><span style="font-size: 1.5rem;"></span></div><div>
+</div><div>&nbsp; sudo apt install qemu-user-static debootstrap binfmt* gparted
+</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1fVhgdy1g" id="content9-1x">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div><span style="font-size: 1.5rem;">⦁	Plug in the device in Mass Storage Mode, open Gparted and change to the device (usually /dev/sdb if no other drives are inserted)
+<br><br></span></div><div><span style="font-size: 1.5rem;">
+</span></div><div><span style="font-size: 1.5rem;">⦁ Find the partition Labled Windows (the partition holding Windows 10 ARM) and reformat it to ext4, once it is formatted successfully close gparted.
+</span></div><div><span style="font-size: 1.5rem;">
+</span></div><div><span style="font-size: 1.5rem;">(Take note of what device the ext4 partition is along with what partition is the EFI for Windows ARM, for me ext4 (is named Windows) = /dev/sdb41 and EFI (is named SYSTEM) = /dev/sdb39)
+</span></div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1fVzT5XYx" id="content9-1y">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div><span style="font-size: 1.5rem;">To mount the new partition we will need folders.&nbsp;</span><span style="font-size: 1.5rem;">Open Terminal and as root and type:&nbsp;<br></span><br></div><div>⦁	mkdir /mnt/root 
+</div><div>⦁	mkdir /mnt/boot 
+</div><div>⦁	mount /dev/sdb41 /mnt/root
+</div><div>
+</div><div>Keep Terminal open.
+</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="header1 cid-s1fW9efDX9" id="header16-20">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Step 2 - Debootstrap Debian onto device:</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content9 cid-s1fW0OWeHY" id="content9-1z">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>Now we need to install to the mounted partition. As root type:<br></div><div>⦁	qemu-debootstrap --arch=arm64 stretch /mnt/root
+</div><div>
+</div><div>This will take a while..
+ Let it do it's thing, if you encounter an internet issue, delete everything inside /mnt/root and try again.</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1fX3BKYix" id="content9-21">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>(I'm using 4.18.6 as the example, if you're using 5.7 then this is the same just change the file names)
+</div><div>Copy the downloaded kernel *.deb files to /mnt/root
+</div><div>For example if they are in your Download folder type (as root, %Username% replace with your username) :
+<br><br></div><div>
+</div><div>⦁ cp /home/%Username%/Download/linux-headers-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
+<br>⦁ cp /home/%Username%/Download/linux-image-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
+</div>⦁ cp /home/%Username%/Download/linux-libc-dev-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
+<br><div><br></div><div>
+</div><div>Copy the msm8994-lumia..dtb to /mnt/root/boot
+</div><div>⦁ cp /home/%Username%/Download/msm8994-microsoft-lumia-950xl.dtb /mnt/root/boot</div><div>
+</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="header1 cid-s1fYCqrlv4" id="header16-22">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Step 3 - Finishing installation</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content9 cid-s1fYTB947H" id="content9-23">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>Now we need to finish up and make it usable, as root type:
+<br><br></div><div>⦁	apt update &amp;&amp; apt install initramfs-tools sudo nano onboard</div>(Onboard will let you have an onscreen keyboard, and if you modify the settings, will act like a phone keyboard for ease)<br><br>⦁Now time to install the Kernel files:&nbsp;<br><div> 
+</div><div>dpkg -i *.deb</div><div>update-initramfs -c -k 4.18.6-lumia-950xl-uefi
+</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1gbrSmjaR" id="content9-24">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div><span style="font-size: 1.5rem;">⦁Now this next bit WILL fail several times, not sure why but it does.. takes me between 4 and 6 tries so patience and non't panic
+, type:<br></span><br></div><div>⦁	apt install tasksel &amp;&amp; apt update
+</div><div>⦁	tasksel (This will load a menu:)
+</div><div>⦁	Choose a Desktop Environment<br>⦁Repeat until it finishes with without the error "tasksel: apt-get failed (100"</div><br><div>( I chose MATE because I'm used to it and it's lightweight
+, but you can choose any)</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1gcbjyjYN" id="content9-25">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>Now add a user and add them to Sudoers Group (From here %Username&amp; is the name you want eg. I would replace %Username% with empy as thats the user I created)
+<br><br></div><div>⦁ &nbsp;adduser %Username%
+</div><div>&nbsp;⦁ usermod -aG sudo %Username%
+</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1gcSDiEpb" id="content9-26">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>&nbsp;This is if you selected MATE(lightdm based) as the Desktop Environment, if you chose a different one google how to enable AutoLogin.. We will enable autologin for lightdm, type:<br>&nbsp;
+</div><div>⦁ nano /etc/lightdm/lightdm.conf
+<br></div><div>(Add this under [Seat:*]
+)</div><div>
+</div><div>[Seat:*]</div><div>pam-service=lightdm
+</div><div>pam-autologin-service=lightdm-autologin
+</div><div>autologin-user=%Username%
+</div><div>autologin-user-timeout=0
+</div><div>session-wrapper=/etc/X11/Xsession
+</div><div>Greeter-session=lightdm-greeter
+</div><div>
+</div><div>(To save press CTRL and X then type Y, then Enter)
+</div><div>⦁	Exit chroot by typing Exit
+ and move to <a href="page5.html#header16-2b">Booting Debian</a></div><div>(If you are trying my 5.7 Kernel stay in the chroot and continue to next step.
+)</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="header1 cid-s1geaq6Ef8" id="header16-27">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Extra Steps For Kernel 5.7</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content9 cid-s1geoGbdL9" id="content9-28">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>Now we need to install the things for Bluetooth Networking, still in the chroot type:<br><br></div><div>⦁&nbsp;<span style="font-size: 1.5rem;">apt install bluetooth bluemon bluez* rfkill rfcomm network-manager-gnome<br><br></span></div><div>(Bluez* and Network-Manager-Gnome are not really needed I think, but I installed them for tools like hciconfig and hcitool and the Gnome Network Manager)
+</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1gfsEwnQr" id="content9-29">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>Now we need to add our user created earlier to the netdev group and Blacklist the Wifi <br>(<a href="https://github.com/WOA-Project/Lumia950XLPkg" target="_blank">See info on why here</a> at the section Linux Notes):
+</div><div>
+</div><div>⦁ adduser %Username&amp; netdev
+<br></div><div>&nbsp;⦁ nano /etc/modprobe.d/blacklist.conf
+</div><div>
+(type)</div><div>&nbsp;blacklist ath10k_pci
+</div><div>&nbsp;(Save and exit, then exit chroot)
+<span style="font-size: 1.5rem;">.&nbsp;</span></div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1ggFH9NJ2" id="content9-2a">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>⦁	Copy the downloaded rampatch and tvl file to device, this may be different for some variants of the 950XL (Don't quote me) if you are unsure, boot the phone into Debian (See Below) and run dmesg, look for where it says it failed to load files. Type as root<br><br></div><div>&nbsp;cp /home/%UsernameOnPC%/Download/rampatch_00440302.bin /mnt/root/lib/firmware/qca</div><div>&nbsp;cp /home/%UsernameOnPC%/Download/nvm_00440302.bin /mnt/root/lib/firmware/qca</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="header1 cid-s1ghxivYDy" id="header16-2b">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Booting Debian</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content9 cid-s1ghEBXavU" id="content9-2c">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>In the files downloaded there will be a GRUB-EFI folder.. 
+</div><div>⦁	Open the Grub.cfg file in the downloaded GRUB-EFI folder, it will show similar to this:
+</div><br><div></div><div><img src="data:image/png;base64,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SRBAAAEEEEAAAQSuI0Aweh1XckUAAQQQQAABBBAoIUAwWgKJJAgggAACCCCAAALXESAYvY4ruSKAAAIIIIAAAgiUECAYLYFEEgQQQAABBBBAAIHrCBCMXseVXBFAAAEEEEAAAQRKCBCMlkAiCQIIIIAAAggggMB1BAhGr+NKrggggAACCCCAAAIlBAhGSyCRBAEEEEAAAQQQQOA6AgSj13ElVwQQQAABBBBAAIESAgSjJZBIggACCCCAAAIIIHAdAYLR67iSKwIIIIAAAggggEAJAYLREkgkQQABBBBAAAEEELiOAMHodVzJFQEEEEAAAQQQQKCEAMFoCSSSIIAAAggggAACCFxHgGD0Oq7kigACCCCAAAIIIFBCgGC0BBJJEEAAAQQQQAABBK4jcD4YPcw17HTUGc51uE4dyBUBBBBAAAEEEEDghwqcD0a7Y638pbzNm/4Sjf7Q04RmI4AAAggggAAC1xE4H4xep1xyRQABBBBAAAEEEEBABKOcBAgggAACCCCAAAJfJlAyGL3RbX+j/ceX1ZOCEUAAAQQQQAABBFooUDIY7Wq88vXw3tFwzsLRFp4HNAkBBBBAAAEEEPgSgZLBqLSedPRyu9Vq3P2SilIoAggggAACCCCAQPsESgajB33s+nq8JxBt3ylAixBAAAEEEEAAga8TKBmMfmi/+bpKUjICCCCAAAIIIIBAOwVKBqPtbDytQgABBBBAAAEEEPhaAYLRr/WndAQQQAABBBBA4EcLnA9Gg/8OdKRF/1EsGf3R5wqNRwABBBBAAAEEahf4n+/7/9WeKxkigAACCCCAAAIIIFBC4PzIaIlMSIIAAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0CBKO1MJIJAggggAACCCCAwCUCBKOXqHEMAggggAACCCCAQC0C/x9iWJzSs6MViwAAAABJRU5ErkJggg==" style="width: 675px;"><br>just make sure mmcblk0p41 matches the end number for the ext4 partition e.g /dev/sdb41 = /dev/mmcblk0p41
+</div><div>
+<span style="font-size: 1.5rem;">(everything should be set up like this, if you are using 5.7 Kernel the grub.cfg will be amended for 5.7 on my github)&nbsp;</span></div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="mbr-section article content9 cid-s1gjTuxKx6" id="content9-2d">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 100%;">
+            <hr class="line" style="width: 100%;">
+            <div class="section-text align-center mbr-fonts-style display-5">
+                    
+                <div>Mount EFI partition and copy the boot files (as root) to the device:
+<br><br></div><div>⦁ mount /dev/sda39 /mnt/boot
+</div><div>⦁ cp /home/%UsernameOnPC%/Download/GRUB-EFI/EFI/Boot/grub.cfg /mnt/boot/EFI/boot/
+</div><div>⦁ cp /home/%UsernameOnPC%/Download/GRUB-EFI/EFI/Boot/bootaa64.efi /mnt/boot/EFI/boot/
+</div><div>⦁ umount /mnt/boot
+</div><div>⦁ umount /mnt/root
+</div><br><div>DONE! Safely remove and restart Phone, If all gone well it should boot up to the Menu, Camera button on "Windows 10", it will load grub and boot Debian!</div></div>
+            <hr class="line" style="width: 100%;">
+        </div>
+        </div>
+</section>
+
+<section class="header1 cid-s1glzB670A" id="header16-2f">
+
+    
+
+    
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2"><span style="font-weight: normal;">Final Thoughts</span></h1>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article content10 cid-s1glG9hdJZ" id="content10-2g">
+    
+     
+
+    <div class="container">
+        <div class="inner-container" style="width: 66%;">
+            <hr class="line" style="width: 25%;">
+            <div class="section-text align-center mbr-white mbr-fonts-style display-5">
+                    Things to keep in mind: Wifi will not work yet, I haven't got the knowledge to make it if you are curious go have a look at the notes on the <a href="https://github.com/WOA-Project/Lumia950XLPkg" target="_blank">Lumia950XLPkg</a> page, there are also notes on ACPI and other issues present.<br><br>I take no credit for all of this work (apart from my 5.7 Kernel work). There's a long list of people who made this possible, I will list who I'm aware worked on it I am sorry if i missed someone!!: <br>-<a href="https://github.com/WOA-Project" target="_blank">WoA Project</a>-<a href="https://github.com/ReneLergner" target="_blank">Heathcliff74 for WPInternals</a>-<a href="https://github.com/imbushuo" target="_blank">Imbushuo</a>-<a href="https://github.com/gus33000" target="_blank">gus33000</a>-<a href="https://android4lumia.github.io/" target="_blank">Android4Lumia</a>-<a href="https://t.me/GNULumia"></a><a href="https://t.me/GNULumia" target="_blank">Members from the&nbsp;GNU/Lumia&nbsp;Telegram group</a>-<a href="https://wiki.postmarketos.org/wiki/Microsoft_Lumia_950_XL_(microsoft-cityman)" target="_blank">Users from PostmarketOS</a>-<br>Many More!!<br><br></div>
+            <hr class="line" style="width: 25%;">
+        </div>
+    </div>
+</section>
+
+<section once="footers" class="cid-s1fJKA8i80" id="footer7-1i">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            
+            <div class="row social-row">
+                <div class="social-list align-right pb-2">
+                    
+                    
+                    
+                    
+                    
+                    
+                <div class="soc-item">
+                        <a href="https://twitter.com/GingerGunt" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon" style="color: rgb(85, 180, 212); fill: rgb(85, 180, 212);"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.facebook.com/groups/172181590537251" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-facebook socicon" style="color: rgb(85, 180, 212); fill: rgb(85, 180, 212);"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://github.com/Empyreal96" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social mbrib-github" style="color: rgb(85, 180, 212); fill: rgb(85, 180, 212);"></span>
+                        </a>
+                    </div></div>
+            </div>
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">Add Me on these platforms!!!!<br><br>I AM NOT AFFILIATED WITH WOA-PROJECT, MICROSOFT OR ANY RESPECTIVE COMPANIES, PROJECTS OR PEOPLE.<br>© Copyright 2019 Mobirise for the website</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
