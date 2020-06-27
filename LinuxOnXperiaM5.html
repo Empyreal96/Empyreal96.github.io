@@ -70,7 +70,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/s">free bootstrap theme</a></section><section class="header3 cid-s2o4BmheCf" id="header3-2n">
+<section class="engine"><a href="https://mobirise.info/w">html5 templates</a></section><section class="header3 cid-s2o4BmheCf" id="header3-2n">
 
     
 
@@ -123,7 +123,7 @@
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">
                     Flashing to device</h1>
                 
-                <p class="mbr-text pb-3 mbr-fonts-style display-5">I advice to install through <a href="https://wiki.postmarketos.org/wiki/Installing_pmbootstrap" target="_blank">pmbootstrap</a>&nbsp;due to being able to customise what packages are installed, kernel config and user name and password.&nbsp;<br>Remember:<br>To install you need to use 'pmbotstrap install --android-recovery-zip'.<br>To flash you need to use 'pmbootstrap flasher --method=adb sideload'<br><br>---<br><br>I have also uploaded a 'Flashable' Zip to be sideloaded to the device through ADB and&nbsp;<a href="https://forum.xda-developers.com/xperia-m5/recovery-twrp-3-0-2-2-touch-recovery-t3461728" target="_blank">TWRP</a>, this is literally a 'Proof of Concept' Rom though.<br><br>Packages Installed:<br>msm-fb-refresher<br>linux-firmware-mediatek<br>linux-firmware<br>gedit<br>onboard<br>nano<br>neofetch<br>dhcp<br>linux-rpi-dev<br>network-extras<br>networkmanager<br>&nbsp;*These were installed when I was building/porting not sure if all have functionallity*<br><br>Other Info for Rom:<br>Username = user<br>Password = user<br>Same 'Working features' as pmbootstrap method<br><br>Scroll down for extra info.</p>
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">I advice to install through <a href="https://wiki.postmarketos.org/wiki/Installing_pmbootstrap" target="_blank">pmbootstrap</a>&nbsp;due to being able to customise what packages are installed, kernel config and user name and password.&nbsp;<br>**NOTE: I forgot to add 'msm-fb-refresher' to required packages, install it as an additional package during 'pmbootstrap init'<br>Remember:<br><br>To build the image you need to use 'pmbotstrap install --android-recovery-zip' to create the flashable zip.<br>To flash you need to use 'pmbootstrap flasher --method=adb sideload' with the device in TWRP ADB Sideload mode.<br><br>---<br><br>I have also uploaded a 'Flashable' Zip to be sideloaded to the device through ADB and&nbsp;<a href="https://forum.xda-developers.com/xperia-m5/recovery-twrp-3-0-2-2-touch-recovery-t3461728" target="_blank">TWRP</a>, this is literally a 'Proof of Concept' Rom though.<br><br>Packages Installed:<br>msm-fb-refresher<br>linux-firmware-mediatek<br>linux-firmware<br>gedit<br>onboard<br>nano<br>neofetch<br>dhcp<br>linux-rpi-dev<br>network-extras<br>networkmanager<br>&nbsp;*These were installed when I was building/porting not sure if all have functionallity*<br><br>Other Info for Rom:<br>Username = user<br>Password = user<br>Same 'Working features' as pmbootstrap method<br><br>Scroll down for extra info.</p>
                 <div class="mbr-section-btn"><a class="btn btn-md btn-black display-4" href="https://drive.google.com/drive/folders/1djn6q8heTBUyXxDxWZp-o8PBN63vdf5O?usp=sharing" target="_blank">Download 'Flashable' Zip</a></div>
             </div>
         </div>
@@ -205,7 +205,7 @@
             <div class="title col-12 col-md-8">
                 <h2 class="align-center pb-3 mbr-fonts-style display-2">
                     USB Networking</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">An IP Address will be given to the phone when plugging into a PC, this is used for USB Networking.<br><br>USB Networking (SSH) Works (I personally have issues connecting to the shell, it logs in.. I am not sure if it's just my laptop or to do with Kernel Config)&nbsp;<br><br>USB Internet I fail to get working at the moment, I need to create patches for building the kernel with USB_ETH config as the standard ANDROID USB GADGET isn't letting me connect to internet.&nbsp;</h3>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">An IP Address will be given to the phone when plugging into a PC, this is used for USB Networking.<br><br>USB Networking (SSH) Works.&nbsp;<br><br>USB Internet I fail to get working at the moment, I need to create patches for building the kernel with USB_ETH config as the standard ANDROID USB GADGET isn't letting me connect to internet.&nbsp;</h3>
                 
             </div>
         </div>

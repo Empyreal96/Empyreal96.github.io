@@ -70,7 +70,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/u">bootstrap responsive templates</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
+<section class="engine"><a href="https://mobirise.info/n">free simple website templates</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
 
     
 
@@ -88,7 +88,7 @@
 </h3>
                 <div class="mbr-section-text mbr-white pb-3 ">
                     <p class="mbr-text mbr-fonts-style display-5"><br>This will mainly be a text-based guide, I may add screens next time I reinstall Linux but I feel not need right now..
-<br><br>Notes please read: 
+<br><br>Notes please read: <br>
 <br>From the start I will presume readers have already Unlocked their Bootloader and Installed WoA Lumia already/before. 
 <br>This isn't really useful yet because nothing can be done really, it's more for fun or developing more on getting Linux supported.</p>
                 </div>
@@ -224,7 +224,7 @@
             <div class="section-text align-center mbr-fonts-style display-5">
                     
                 <div><span style="font-size: 1.5rem;">⦁	We need to install the required tools:&nbsp;<br></span><br><span style="font-size: 1.5rem;"></span></div><div>
-</div><div>&nbsp; sudo apt install qemu-user-static debootstrap binfmt* gparted
+</div><div>&nbsp; sudo apt install qemu-user-static debootstrap binfmt gparted
 </div></div>
             <hr class="line" style="width: 100%;">
         </div>
@@ -319,14 +319,14 @@
                     
                 <div>(I'm using 4.18.6 as the example, if you're using 5.7 then this is the same just change the file names)
 </div><div>Copy the downloaded kernel *.deb files to /mnt/root
-</div><div>For example if they are in your Download folder type (as root, %Username% replace with your username) :
+</div><div>For example if they are in your Downloads folder type (as root, %Username% replace with your username) :
 <br><br></div><div>
-</div><div>⦁ cp /home/%Username%/Download/linux-headers-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
-<br>⦁ cp /home/%Username%/Download/linux-image-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
-</div>⦁ cp /home/%Username%/Download/linux-libc-dev-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
+</div><div>⦁ cp /home/%Username%/Downloads/linux-headers-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
+<br>⦁ cp /home/%Username%/Downloads/linux-image-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
+</div>⦁ cp /home/%Username%/Downloads/linux-libc-dev-4.18.6-lumia-950xl-uefi-arm64.deb /mnt/root/
 <br><div><br></div><div>
 </div><div>Copy the msm8994-lumia..dtb to /mnt/root/boot
-</div><div>⦁ cp /home/%Username%/Download/msm8994-microsoft-lumia-950xl.dtb /mnt/root/boot</div><div>
+</div><div>⦁ cp /home/%Username%/Downloads/msm8994-microsoft-lumia-950xl.dtb /mnt/root/boot</div><div>
 </div></div>
             <hr class="line" style="width: 100%;">
         </div>
@@ -362,8 +362,8 @@
             <div class="section-text align-center mbr-fonts-style display-5">
                     
                 <div>Now we need to finish up and make it usable, as root type:
-<br><br></div><div>⦁	apt update &amp;&amp; apt install initramfs-tools sudo nano onboard</div>(Onboard will let you have an onscreen keyboard, and if you modify the settings, will act like a phone keyboard for ease)<br><br>⦁Now time to install the Kernel files:&nbsp;<br><div> 
-</div><div>dpkg -i *.deb</div><div>update-initramfs -c -k 4.18.6-lumia-950xl-uefi
+<br><br></div><div>⦁	apt update &amp;&amp; apt install initramfs-tools sudo nano onboard</div>(Onboard will let you have an onscreen keyboard, and if you modify the settings, will act like a phone keyboard for ease)<br><br>Now time to install the Kernel files:&nbsp;<br><div> 
+</div><div>⦁dpkg -i /*.deb</div><div>⦁update-initramfs -c -k 4.18.6-lumia-950xl-uefi
 </div></div>
             <hr class="line" style="width: 100%;">
         </div>
@@ -382,7 +382,7 @@
                 <div><span style="font-size: 1.5rem;">⦁Now this next bit WILL fail several times, not sure why but it does.. takes me between 4 and 6 tries so patience and non't panic
 , type:<br></span><br></div><div>⦁	apt install tasksel &amp;&amp; apt update
 </div><div>⦁	tasksel (This will load a menu:)
-</div><div>⦁	Choose a Desktop Environment<br>⦁Repeat until it finishes with without the error "tasksel: apt-get failed (100"</div><br><div>( I chose MATE because I'm used to it and it's lightweight
+</div><div>⦁	Choose a Desktop Environment<br>⦁Repeat until it finishes with without the error "tasksel: apt-get failed"</div><br><div>( I chose MATE because I'm used to it and it's lightweight
 , but you can choose any)</div></div>
             <hr class="line" style="width: 100%;">
         </div>
@@ -418,8 +418,7 @@
                     
                 <div>&nbsp;This is if you selected MATE(lightdm based) as the Desktop Environment, if you chose a different one google how to enable AutoLogin.. We will enable autologin for lightdm, type:<br>&nbsp;
 </div><div>⦁ nano /etc/lightdm/lightdm.conf
-<br></div><div>(Add this under [Seat:*]
-)</div><div>
+<br></div><div>⦁ Add this under [Seat:*]&nbsp;</div><div><br></div><div>
 </div><div>[Seat:*]</div><div>pam-service=lightdm
 </div><div>pam-autologin-service=lightdm-autologin
 </div><div>autologin-user=%Username%
@@ -427,10 +426,9 @@
 </div><div>session-wrapper=/etc/X11/Xsession
 </div><div>Greeter-session=lightdm-greeter
 </div><div>
-</div><div>(To save press CTRL and X then type Y, then Enter)
+</div><div>(To save press CTRL and X then type Y, then Enter)</div><br>(If you are trying my 5.7 Kernel stay in the chroot and continue to next step. )<br><div>
 </div><div>⦁	Exit chroot by typing Exit
- and move to <a href="page5.html#header16-2b">Booting Debian</a></div><div>(If you are trying my 5.7 Kernel stay in the chroot and continue to next step.
-)</div></div>
+ and move to <a href="page5.html#header16-2b">Booting Debian</a></div></div>
             <hr class="line" style="width: 100%;">
         </div>
         </div>
@@ -464,7 +462,7 @@
             <hr class="line" style="width: 100%;">
             <div class="section-text align-center mbr-fonts-style display-5">
                     
-                <div>Now we need to install the things for Bluetooth Networking, still in the chroot type:<br><br></div><div>⦁&nbsp;<span style="font-size: 1.5rem;">apt install bluetooth bluemon bluez* rfkill rfcomm network-manager-gnome<br><br></span></div><div>(Bluez* and Network-Manager-Gnome are not really needed I think, but I installed them for tools like hciconfig and hcitool and the Gnome Network Manager)
+                <div>Now we need to install the things for Bluetooth Networking, still in the chroot type:<br><br></div><div>⦁&nbsp;<span style="font-size: 1.5rem;">apt install bluetooth bluemon bluez rfkill rfcomm network-manager-gnome<br><br></span></div><div>(Bluez and Network-Manager-Gnome are not really needed I think, but I installed them for tools like hciconfig and hcitool and the Gnome Network Manager)
 </div></div>
             <hr class="line" style="width: 100%;">
         </div>
@@ -482,7 +480,7 @@
                     
                 <div>Now we need to add our user created earlier to the netdev group and Blacklist the Wifi <br>(<a href="https://github.com/WOA-Project/Lumia950XLPkg" target="_blank">See info on why here</a> at the section Linux Notes):
 </div><div>
-</div><div>⦁ adduser %Username&amp; netdev
+</div><div>⦁ adduser %Username% netdev
 <br></div><div>&nbsp;⦁ nano /etc/modprobe.d/blacklist.conf
 </div><div>
 (type)</div><div>&nbsp;blacklist ath10k_pci
@@ -502,7 +500,7 @@
             <hr class="line" style="width: 100%;">
             <div class="section-text align-center mbr-fonts-style display-5">
                     
-                <div>⦁	Copy the downloaded rampatch and tvl file to device, this may be different for some variants of the 950XL (Don't quote me) if you are unsure, boot the phone into Debian (See Below) and run dmesg, look for where it says it failed to load files. Type as root<br><br></div><div>&nbsp;cp /home/%UsernameOnPC%/Download/rampatch_00440302.bin /mnt/root/lib/firmware/qca</div><div>&nbsp;cp /home/%UsernameOnPC%/Download/nvm_00440302.bin /mnt/root/lib/firmware/qca</div></div>
+                <div>⦁	Copy the downloaded rampatch and tvl file to device, this may be different for some variants of the 950XL (Don't quote me) if you are unsure then: boot the phone into Debian (See Below) and run dmesg, look for where it says it failed to load files. Type as root<br><br></div><div>&nbsp;cp /home/%UsernameOnPC%/Downloads/rampatch_00440302.bin /mnt/root/lib/firmware/qca</div><div>&nbsp;cp /home/%UsernameOnPC%/Downloads/nvm_00440302.bin /mnt/root/lib/firmware/qca</div></div>
             <hr class="line" style="width: 100%;">
         </div>
         </div>
@@ -557,8 +555,8 @@
                     
                 <div>Mount EFI partition and copy the boot files (as root) to the device:
 <br><br></div><div>⦁ mount /dev/sda39 /mnt/boot
-</div><div>⦁ cp /home/%UsernameOnPC%/Download/GRUB-EFI/EFI/Boot/grub.cfg /mnt/boot/EFI/boot/
-</div><div>⦁ cp /home/%UsernameOnPC%/Download/GRUB-EFI/EFI/Boot/bootaa64.efi /mnt/boot/EFI/boot/
+</div><div>⦁ cp /home/%UsernameOnPC%/Downloads/GRUB-EFI/EFI/Boot/grub.cfg /mnt/boot/EFI/boot/
+</div><div>⦁ cp /home/%UsernameOnPC%/Downloads/GRUB-EFI/EFI/Boot/bootaa64.efi /mnt/boot/EFI/boot/
 </div><div>⦁ umount /mnt/boot
 </div><div>⦁ umount /mnt/root
 </div><br><div>DONE! Safely remove and restart Phone, If all gone well it should boot up to the Menu, Camera button on "Windows 10", it will load grub and boot Debian!</div></div>
