@@ -70,7 +70,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/n">free simple website templates</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
+<section class="engine"><a href="https://mobirise.info/s">bootstrap themes</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
 
     
 
@@ -361,8 +361,8 @@
             <hr class="line" style="width: 100%;">
             <div class="section-text align-center mbr-fonts-style display-5">
                     
-                <div>Now we need to finish up and make it usable, as root type:
-<br><br></div><div>⦁	apt update &amp;&amp; apt install initramfs-tools sudo nano onboard</div>(Onboard will let you have an onscreen keyboard, and if you modify the settings, will act like a phone keyboard for ease)<br><br>Now time to install the Kernel files:&nbsp;<br><div> 
+                <div>Now we need to finish up and make it usable, type:</div><br><div>
+⦁ &nbsp;chroot /mnt/root<br><br></div><div>⦁	apt update &amp;&amp; apt install initramfs-tools sudo nano onboard locales</div>(Onboard will let you have an onscreen keyboard, and if you modify the settings, will act like a phone keyboard for ease)<br><br>Now time to install the Kernel files:&nbsp;<br><div> 
 </div><div>⦁dpkg -i /*.deb</div><div>⦁update-initramfs -c -k 4.18.6-lumia-950xl-uefi
 </div></div>
             <hr class="line" style="width: 100%;">
@@ -462,7 +462,7 @@
             <hr class="line" style="width: 100%;">
             <div class="section-text align-center mbr-fonts-style display-5">
                     
-                <div>Now we need to install the things for Bluetooth Networking, still in the chroot type:<br><br></div><div>⦁&nbsp;<span style="font-size: 1.5rem;">apt install bluetooth bluemon bluez rfkill rfcomm network-manager-gnome<br><br></span></div><div>(Bluez and Network-Manager-Gnome are not really needed I think, but I installed them for tools like hciconfig and hcitool and the Gnome Network Manager)
+                <div>Now we need to install the things for Bluetooth Networking, still in the chroot type:<br><br></div><div>⦁&nbsp;<span style="font-size: 1.5rem;">apt install bluetooth bluemon bluez rfkill network-manager-gnome<br><br></span></div><div>(Bluez and Network-Manager-Gnome are not really needed I think, but I installed them for tools like hciconfig and hcitool and the Gnome Network Manager)
 </div></div>
             <hr class="line" style="width: 100%;">
         </div>
