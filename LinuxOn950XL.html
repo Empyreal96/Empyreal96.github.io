@@ -480,7 +480,7 @@
                     
                 <div>Now we need to add our user created earlier to the netdev group and Blacklist the Wifi <br>(<a href="https://github.com/WOA-Project/Lumia950XLPkg" target="_blank">See info on why here</a> at the section Linux Notes):
 </div><div>
-</div><div>⦁ adduser %Username% netdev
+</div><div>⦁ usermod -aG netdev %Username%
 <br></div><div>&nbsp;⦁ nano /etc/modprobe.d/blacklist.conf
 </div><div>
 (type)</div><div>&nbsp;blacklist ath10k_pci
