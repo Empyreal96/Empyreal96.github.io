@@ -59,8 +59,8 @@
                     <a class="nav-link link text-white display-4" href="https://mobirise.co">
                         </a>
                 </li>
-                <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4" href="Win10ARM64.html" data-toggle="dropdown-submenu" aria-expanded="false"><span class="mbri-cursor-click mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
-                        Guides and Extras</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="LinuxOn950XL.html"><span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>Installing Linux on Lumia 950XL</a></div></li><li class="nav-item">
+                <li class="nav-item dropdown open"><a class="nav-link link text-white dropdown-toggle display-4" href="Win10ARM64.html" data-toggle="dropdown-submenu" aria-expanded="true"><span class="mbri-cursor-click mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
+                        Guides and Extras</a><div class="dropdown-menu"><a class="text-white dropdown-item display-4" href="LinuxOn950XL.html"><span class="mbri-login mbr-iconfont mbr-iconfont-btn"></span>Installing Linux on Lumia 950XL</a><a class="text-white dropdown-item display-4" href="Linx64bitLinux.html" aria-expanded="false"><span class="mbrib-tablet mbr-iconfont mbr-iconfont-btn"></span>Installing Linux on Linx 1010L</a></div></li><li class="nav-item">
                     <a class="nav-link link text-white display-4" href="Win10Tool.html"><span class="mbri-code mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
                         Windows 10 Toolbox</a>
                 </li><li class="nav-item"><a class="nav-link link text-white display-4" href="LinuxOnXperiaM5.html"><span class="mbri-mobile mbr-iconfont mbr-iconfont-btn"></span>pmOS for Xperia M5</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="Win10ARM64.html"><span class="mbri-windows mbr-iconfont mbr-iconfont-btn" style="color: rgb(255, 255, 255);"></span>
@@ -70,7 +70,7 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/s">bootstrap themes</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
+<section class="engine"><a href="https://mobirise.info">Mobirise</a></section><section class="header3 cid-s1gs4XnoWC" id="header3-2i">
 
     
 
@@ -480,7 +480,7 @@
                     
                 <div>Now we need to add our user created earlier to the netdev group and Blacklist the Wifi <br>(<a href="https://github.com/WOA-Project/Lumia950XLPkg" target="_blank">See info on why here</a> at the section Linux Notes):
 </div><div>
-</div><div>⦁ usermod -aG netdev %Username%
+</div><div>⦁ adduser %Username% netdev
 <br></div><div>&nbsp;⦁ nano /etc/modprobe.d/blacklist.conf
 </div><div>
 (type)</div><div>&nbsp;blacklist ath10k_pci
