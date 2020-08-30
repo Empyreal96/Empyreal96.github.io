@@ -7,10 +7,10 @@
   <meta name="generator" content="Mobirise v5.0.29, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/mbr-122x141.png" type="image/x-icon">
-  <meta name="description" content="(Work In Progress) A large featured Windows 10 Toolbox to modify various parts of Windows 10">
+  <meta name="description" content="Prebuilt Kernels for the Lumia 950XL">
   
   
-  <title>Windows 10 Toolbox</title>
+  <title>Cityman Pre-built Kernels</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
@@ -29,7 +29,7 @@
 </head>
 <body>
   
-  <section class="menu cid-s089LurPJ2" once="menu" id="menu1-c">
+  <section class="menu cid-s1fJKuXpdw" once="menu" id="menu1-49">
 
     
 
@@ -69,111 +69,57 @@
     </nav>
 </section>
 
-<section class="engine"><a href="https://mobirise.info/s">free bootstrap themes</a></section><section class="mbr-section content4 cid-s089LwqFS9" id="content4-d">
+<section class="engine"><a href="https://mobirise.info/b">how to create your own website</a></section><section class="header1 cid-s99EHTuLRI mbr-parallax-background" id="header16-4b">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 align-center">
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Pre-compiled Lumia 950 XL Kernels</h1>
+                
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">I wouldn't have been able to compile these if it wasn't for Imbushuo with his <a href="https://dev.azure.com/imbushuo-personal/_git/Kernel" class="text-primary" target="_blank">4.18.6 Kernel</a> and config.<br>Here is some info on the Kernels I have compiled and uploaded for my experimemts</p>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section content4 cid-s99FoLLyE5" id="content4-4c">
 
     
 
     <div class="container">
         <div class="media-container-row">
             <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                    <br>Windows 10 Toolbox</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-7"><strong>This started as a little Windows Update 'Switch' so that I could enable and disable it as and when I needed it, but then I got using W10 ARM64 on my Lumia 950XL, I would apply various tweaks to improve its responsiveness but only to have to re-flash a few days later due to my experimenting.. 
-</strong><div><strong>So I started to make a tool to let me change the settings I would change after a new install.
-</strong></div><div><strong>Now it has progressed to quite a large Toolbox! but I plan to add so much more!
-</strong></div><div>
-</div><div><strong>Note: the code will not be pretty, its not very organized and has not comments on what commands do, but I will get round to refining the code, I live by "If it works it don't need fixing"&nbsp;</strong></div></h3>
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">Linux:</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">I built Kernel 5.7 when it was the 'mainline' branch, with support for Bluetooth Networking so I could access the Internet and use apt while <a href="https://twitter.com/GingerGunt/status/1269023317996036096?s=20" class="text-primary" target="_blank">booted up in Debian</a>, it's not perfect but that is all that I have added.<br><br>I did also compile <a href="https://github.com/WOA-Project/linux" class="text-primary" target="_blank">WoA Projects' 'cherry-picked' 5.8 Kernel</a>, but sadly I had issues with Bluetooth in general, with or without the updated Device tree, it could be the device tree, or the kernel config and the new msm8994 commits.. I chose not to upload this version</h3>
                 
             </div>
         </div>
     </div>
 </section>
 
-<section class="cid-s966dKDJIs" id="image3-46">
+<section class="mbr-section content4 cid-s99FpnkpSz" id="content4-4d">
 
     
 
-    <figure class="mbr-figure container">
-            <div class="image-block" style="width: 100%;">
-                <img src="assets/images/toolbox.gif" width="1400" alt="">
-                
-            </div>
-    </figure>
-</section>
-
-<section class="mbr-section contacts3 cid-s08dVKRZLW" id="contacts3-s">
-    <!---->
-    
-    <!---->
-    <!--Overlay-->
-    
-    <!--Container-->
     <div class="container">
-        <div class="row">
-            <!--Titles-->
-            <div class="title col-12">
-                <h2 class="align-left mbr-fonts-style display-2">
-                    What can it do?</h2>
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">Android:</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">This is just a basic Android Kernel, using <a href="https://github.com/Empyreal96/packed-lumia-950xl-kernels/blob/master/configs/arm64/cityman_droid_defconfig" class="text-primary" target="_blank">tweaked config</a> from the <a href="https://dev.azure.com/imbushuo-personal/_git/Kernel?path=%2Farch%2Farm64%2Fconfigs%2F950xl_defconfig&version=GBmaster" class="text-primary" target="_blank">Linux config</a>.<br>I didn't make this with booting Android in mind though, all I wanted to do was <a href="https://twitter.com/J0Sh1X/status/1235534920027713539" class="text-primary" target="_blank">boot TWRP on the device</a>&nbsp;as J0Sh1X did..&nbsp;<br><br>I was successful, and even managed to <a href="https://twitter.com/GingerGunt/status/1292382242065526784?s=20" class="text-primary" target="_blank">flash Windows 10 Mobile</a> with a TWRP Flashable Zip I made.. but that's a story for later..<br><br>I added NTFS Support to the kernel along with the Android configs</h3>
                 
-            </div>
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="wrapper">
-                            <span class="iconfont-wrapper">
-                                <span class="amp-iconfont icon fa-thumbs-o-up fa mbri-windows" style="color: rgb(35, 35, 35); fill: rgb(35, 35, 35);"></span>
-                            </span>
-                            <div class="b-info b-adress">
-                                <h5 class="align-left mbr-fonts-style display-5">
-                                    Windows Update, Services, Apps and Features</h5>
-                                <p class="mbr-text align-left mbr-fonts-style display-7">Enable/Disable Update Services, Defender, Spotlight, Optional Features (DirectPlay, WSL), Built-in Metro Apps.....</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="wrapper">
-                            <span class="iconfont-wrapper">
-                                <span class="amp-iconfont icon fa-phone fa mbri-key"></span>
-                            </span>
-                            <div class="b-info b-phone">
-                                <h5 class="align-left mbr-fonts-style display-5">
-                                    Telemetry, User Diagnostic Data, Privacy</h5>
-                                <p class="mbr-text align-left mbr-fonts-style display-7">
-                                    Enable/Disable Telemetry Services and Related Services, Advertising IDs and Application Information Sharing, Delete Scheduled telemetry tasks.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="wrapper">
-                            <span class="iconfont-wrapper">
-                                <span class="amp-iconfont icon fa-comment-o fa mbri-setting2" style="color: rgb(35, 35, 35); fill: rgb(35, 35, 35);"></span>
-                            </span>
-                            <div class="b-info b-mail">
-                                <h5 class="align-left mbr-fonts-style display-5">
-                                    Advanced Settings and System Health</h5>
-                                <p class="mbr-text align-left mbr-fonts-style display-7">
-                                    Preset Paging File Sizes, Reset Shell Folders and DPI, Administrator Account, Context Menu Items, Appearance Settings....</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="wrapper">
-                            <span class="iconfont-wrapper">
-                                <span class="amp-iconfont icon fa-th-large fa mbri-setting" style="color: rgb(35, 35, 35); fill: rgb(35, 35, 35);"></span>
-                            </span>
-                            <div class="b-info b-mail">
-                                <h5 class="align-left mbr-fonts-style display-5">Misc Settings</h5>
-                                <p class="mbr-text align-left mbr-fonts-style display-7">Restore 'Classic' Paint, Calculator, Wordpad and Task Manager. Touch-Screen Options. Bonus old games from the Microsoft Entertainment Pack (Solitare, Snake, Minesweeper ect.)<br><br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="header1 cid-s95J4XblN9" id="header16-41">
+<section class="header1 cid-s99FuQIA5a" id="header16-4e">
 
     
 
@@ -182,36 +128,17 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-10 align-center">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-5"><a href="https://github.com/Empyreal96/win-10-services-toolbox/blob/master/changelog.md" class="text-primary" target="_blank">Full Changelog/Feature List</a></h1>
                 
                 
-                
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">All the Kernels can be found over on my Github</p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-black display-4" href="https://github.com/Empyreal96/packed-lumia-950xl-kernels" target="_blank">Prebuilt Cityman Kernels</a></div>
             </div>
         </div>
     </div>
 
 </section>
 
-<section class="mbr-section info1 cid-s08fXrrP9E" id="info1-t">
-
-    
-
-    
-    <div class="container">
-        <div class="row justify-content-center content-row">
-            <div class="media-container-column title col-12 col-lg-7 col-md-6">
-                <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-5">
-                    Hosted on GitHub, feel free to view, edit and make suggestions!</h3>
-                
-            </div>
-            <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-right py-4"><a class="btn btn-black display-4" href="https://github.com/Empyreal96/win-10-services-toolbox" target="_blank">Windows 10 Toolbox</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section once="footers" class="cid-s089LBYDVG" id="footer7-g">
+<section once="footers" class="cid-s1fJKA8i80" id="footer7-4a">
 
     
 
@@ -258,6 +185,7 @@
   <script src="assets/dropdown/js/nav-dropdown.js"></script>
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   
   
