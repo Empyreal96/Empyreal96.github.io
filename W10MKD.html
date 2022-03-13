@@ -117,15 +117,15 @@
                     <h4 class="mbr-section-subtitle mb-0 mt-2 mbr-fonts-style display-7">
                        Make sure to fetch the Requirements above. Any drive paths below (e.g D:\EFIESP) change it to what letter your MainOS drive is.</h4>
                 </div>
-                <div id="bootstrap-accordion_19" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                <div id="bootstrap-accordion_45" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_19" aria-expanded="false" aria-controls="collapse1">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_45" aria-expanded="false" aria-controls="collapse1">
                                 <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Enter Mass Storage Mode and Backing up the BCD file.</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse1_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_19" data-bs-parent="#accordion">
+                        <div id="collapse1_45" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_45" data-bs-parent="#accordion">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">- Enter Mass Storage and connect to your PC.&nbsp;<br>- Navigate to "<strong>D:\EFIESP\EFI\Microsoft\Boot\</strong>" and make a copy of the file "<strong>BCD</strong>"<br></p>
                             </div>
@@ -133,12 +133,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_19" aria-expanded="false" aria-controls="collapse2">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_45" aria-expanded="false" aria-controls="collapse2">
                                 <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Open Command Prompt as Administrator and Apply BCD Commands.</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse2_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_19" data-bs-parent="#accordion">
+                        <div id="collapse2_45" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_45" data-bs-parent="#accordion">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">
                                     - Open Command Prompt as an Administrator<br>- Type these commands pressing enter after each command:<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <strong>bcdedit /store "D:\EFIESP\EFI\Microsoft\Boot\BCD" /set {default} debug on
@@ -151,12 +151,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_19" aria-expanded="false" aria-controls="collapse3">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_45" aria-expanded="false" aria-controls="collapse3">
                                 <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Copy the files needed by Windows Mobile.</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse3_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_19" data-bs-parent="#accordion">
+                        <div id="collapse3_45" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_45" data-bs-parent="#accordion">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">- Extract/Open "<strong>W10M_kd.zip</strong>" and copy the files to&nbsp;"<strong>D:\Windows\System32</strong>". Don't replace any files that ask to be replaced <em>(No issue if you do replace)&nbsp;</em></p>
                             </div>
@@ -164,12 +164,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_19" aria-expanded="false" aria-controls="collapse4">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_45" aria-expanded="false" aria-controls="collapse4">
                                 <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Setting up WinDbg ready to debug your device.</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse4_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_19" data-bs-parent="#accordion">
+                        <div id="collapse4_45" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_45" data-bs-parent="#accordion">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">
                                     - Launch WinDbg as Administrator.<br>- Goto [<strong>File &gt; Attach a Kernel &gt; USB</strong> Tab]<br>-&nbsp;In the "<strong>Target Name</strong>" box type: WINMOB<br>- (<strong>Optional</strong>) Tick Break on Connection it interrupt Booting with the debugger<br>-&nbsp;(<strong>First Run of WinDbg</strong>) When asked to install a driver from 'Microsoft', <strong>accept installing the driver</strong>. It is for <strong>USB Debugging Drivers</strong></p>
@@ -178,12 +178,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_19" aria-expanded="false" aria-controls="collapse5">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_45" aria-expanded="false" aria-controls="collapse5">
                                 <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Reboot the Device with USB Cable still attached.</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse5_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_19" data-bs-parent="#accordion">
+                        <div id="collapse5_45" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_45" data-bs-parent="#accordion">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">
                                     - Reboot back into "<strong>Normal Mode</strong>"<br>- <strong>Windbg should detect the device during boot!</strong></p>
@@ -192,12 +192,12 @@
                     </div>
                     <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_19" aria-expanded="false" aria-controls="collapse6">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse6_45" aria-expanded="false" aria-controls="collapse6">
                                 <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Notes and How to turn off KD.</strong></h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div id="collapse6_19" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_19" data-bs-parent="#accordion">
+                        <div id="collapse6_45" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_45" data-bs-parent="#accordion">
                             <div class="panel-body">
                                 <p class="mbr-fonts-style panel-text display-4">
                                     - MTP/Data Access may be blocked while Kernel Debugging is active.<br>- Device will likely run a bit slower, this is standard when Debugging.<br>- Debugging Symbols are publically available on Microsoft Symbol Servers, WinDbg will attempt to download the .pdb file needed.<br><br><strong>How to Disable KD</strong><br><strong>- </strong>Either Copy back your backed up <strong>BCD</strong> file<br><strong>or </strong><br><strong>- </strong>Enter<strong> Mass Storage Mode </strong>and run this command like above:<br><br>&nbsp; &nbsp; &nbsp; &nbsp;<strong>&nbsp;          bcdedit /store "D:\EFIESP\EFI\Microsoft\Boot\BCD" /set {default} debug off</strong></p>
@@ -208,7 +208,7 @@
             </div>
         </div>
     </div>
-</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/p" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site/q" style="color:#aaa;">This web page</a> was built with Mobirise web template</p></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/d" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Start a free website - <a href="https://mobirise.site/v" style="color:#aaa;">Details here</a></p></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 </body>
